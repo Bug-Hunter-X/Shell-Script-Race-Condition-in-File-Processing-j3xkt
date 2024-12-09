@@ -1,0 +1,3 @@
+# Shell Script Race Condition
+
+This repository demonstrates a race condition in a shell script that processes and then removes files.  The script uses `find` to locate files and a `while` loop to process them.  However, the file removal happens concurrently with the `find` command's operation, leading to potential errors.  The `bug.sh` file contains the problematic code, and `bugSolution.sh` offers a corrected version that avoids the race condition.
